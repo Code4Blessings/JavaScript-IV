@@ -33,14 +33,14 @@ class Student extends Person {
         this.favSubjects = assets.favSubjects;
     }
     listSubjects() {
-        for(let i=0; i < favSubjects.length; i++) {
-            console.log(favSubjects[i]);
+        for(let i=0; i < this.favSubjects.length; i++) {
+            console.log(this.favSubjects[i]);
         }
     }
     pRAssignment(subject) {
         console.log(`${student.name} has submitted a PR for ${subject}.`)
     }
-    sprintChallenge() {
+    sprintChallenge(subject) {
         console.log(`${student.name} has begun sprint challenge on ${subject}.`)
     }
 }
